@@ -1,0 +1,15 @@
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\bin\Debug\net6.0\Ilya_Kudrenok_Application.exe
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\bin\Debug\net6.0\Ilya_Kudrenok_Application.deps.json
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\bin\Debug\net6.0\Ilya_Kudrenok_Application.runtimeconfig.json
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\bin\Debug\net6.0\Ilya_Kudrenok_Application.dll
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\bin\Debug\net6.0\Ilya_Kudrenok_Application.pdb
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\obj\Debug\net6.0\Ilya_Kudrenok_Application.csproj.AssemblyReference.cache
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\obj\Debug\net6.0\Ilya_Kudrenok_Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\obj\Debug\net6.0\Ilya_Kudrenok_Application.AssemblyInfoInputs.cache
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\obj\Debug\net6.0\Ilya_Kudrenok_Application.AssemblyInfo.cs
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\obj\Debug\net6.0\Ilya_Kudrenok_Application.csproj.CoreCompileInputs.cache
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\obj\Debug\net6.0\Ilya_Kudrenok_Application.dll
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\obj\Debug\net6.0\refint\Ilya_Kudrenok_Application.dll
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\obj\Debug\net6.0\Ilya_Kudrenok_Application.pdb
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\obj\Debug\net6.0\Ilya_Kudrenok_Application.genruntimeconfig.cache
+D:\Projects\IT-Academy\Ilya_Kudrenok_Application\obj\Debug\net6.0\ref\Ilya_Kudrenok_Application.dll
