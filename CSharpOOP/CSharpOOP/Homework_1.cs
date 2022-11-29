@@ -9,187 +9,111 @@ static void Main()
 {
     { }
 }
-//#region Task_1
 
-//var count = int.Parse(Console.ReadLine());
-//var unitPrice = double.Parse(Console.ReadLine());
-//var discount = double.Parse(Console.ReadLine());
+#region Task_1
 
-//var totalPrice = count * (unitPrice - (unitPrice * discount / 100));
+var count = int.Parse(Console.ReadLine());
+var unitPrice = double.Parse(Console.ReadLine());
+var discount = double.Parse(Console.ReadLine());
+Homework homework = new Homework();
+var totalPrice = homework.CountDiscountReturnValue(count, unitPrice, discount);
+Console.WriteLine("Total pricce = " + totalPrice); 
 
-//Console.WriteLine($"price is {totalPrice}");
-//Console.ReadLine();
-
-//#endregion
-
-
-
-//#region Task_2
-
-//var Name1 = Console.ReadLine();
-//var count1 = int.Parse(Console.ReadLine());
-//var unitPrice1 = double.Parse(Console.ReadLine());
-
-//var Name2 = Console.ReadLine();
-//var count2 = int.Parse(Console.ReadLine());
-//var unitPrice2 = double.Parse(Console.ReadLine());
-
-//var Name3 = Console.ReadLine();
-//var count3 = int.Parse(Console.ReadLine());
-//var unitPrice3 = double.Parse(Console.ReadLine());
-
-//var discount = double.Parse(Console.ReadLine());
-
-//var COUNT = count1 + count2 + count3;
-//Console.WriteLine($"total count  is {COUNT}");
-
-//var UNITPRICE = unitPrice1 + unitPrice2 + unitPrice3;
-//Console.WriteLine($"total unitPrice  is {UNITPRICE}");
-
-//var totalPrice = COUNT * (UNITPRICE - (UNITPRICE * discount / 100));
-//Console.WriteLine($"Your price is {totalPrice}");
-//Console.ReadLine();
-
-
-//#endregion
+#endregion
 
 
 
-//#region Task_3
+#region Task_2-3
 
-//var Name1 = Console.ReadLine();
-//var count1 = int.Parse(Console.ReadLine());
-//var unitPrice1 = double.Parse(Console.ReadLine());
+var Name1 = Console.ReadLine();
+var count1 = int.Parse(Console.ReadLine());
+var unitPrice1 = double.Parse(Console.ReadLine());
+var Name2 = Console.ReadLine();
+var count2 = int.Parse(Console.ReadLine());
+var unitPrice2 = double.Parse(Console.ReadLine());
+var Name3 = Console.ReadLine();
+var count3 = int.Parse(Console.ReadLine());
+var unitPrice3 = double.Parse(Console.ReadLine());
+discount = double.Parse(Console.ReadLine());
+String bill = homework.GetItemPrice(Name1, unitPrice1, discount, count1);
+bill += "\n" + homework.GetItemPrice(Name2, unitPrice2, discount, count2);
+bill += "\n" + homework.GetItemPrice(Name3, unitPrice3, discount, count3);
+Console.WriteLine(bill); 
+Console.ReadLine();
 
-//var Name2 = Console.ReadLine();
-//var count2 = int.Parse(Console.ReadLine());
-//var unitPrice2 = double.Parse(Console.ReadLine());
+#endregion
 
-//var Name3 = Console.ReadLine();
-//var count3 = int.Parse(Console.ReadLine());
-//var unitPrice3 = double.Parse(Console.ReadLine());
+#region Task_4
 
-//var discount = double.Parse(Console.ReadLine());
+Console.WriteLine("Enter five sides");
+int firstSide = int.Parse(Console.ReadLine());
+int secondSide = int.Parse(Console.ReadLine());
+int thirdSide = int.Parse(Console.ReadLine());
+int forthSide = int.Parse(Console.ReadLine());
+int fithSide = int.Parse(Console.ReadLine());
 
-//var COUNT1 = count1 + count2 + count3;
-//Console.WriteLine($"total count  is {COUNT1}");
+int Triangleperimeter = firstSide + secondSide + thirdSide;
+int Quadrangleperimeter = firstSide + secondSide + thirdSide + forthSide;
+int Pentagonperimeter = firstSide + secondSide + thirdSide + forthSide + fithSide;
 
-//var COUNT2 = 10;
+Console.WriteLine($"Trianle perimeter: {Triangleperimeter}");
+Console.WriteLine($"Quadrangle perimeter: {Quadrangleperimeter}");
+Console.WriteLine($"Pentagon perimeter: {Pentagonperimeter}");
+Console.ReadLine();
 
-//var UNITPRICE = unitPrice1 + unitPrice2 + unitPrice3;
-//Console.WriteLine($"total unitPrice  is {UNITPRICE}");
+#endregion
 
-//var totalPrice1 = COUNT1 * (UNITPRICE - (UNITPRICE * discount / 100));
-//Console.WriteLine($"Your price is {totalPrice1}");
-//Console.ReadLine();
+#region Task_5
 
-//var totalPrice2 = COUNT2 * (UNITPRICE - (UNITPRICE * discount / 100));
-//Console.WriteLine($"Your price is {totalPrice2}");
-//Console.ReadLine();
-
-//#endregion
-
-//#region Task_4
-//Console.WriteLine("Enter five sides");
-//int firstSide = int.Parse(Console.ReadLine());
-//int secondSide = int.Parse(Console.ReadLine());
-//int thirdSide = int.Parse(Console.ReadLine());
-//int forthSide = int.Parse(Console.ReadLine());
-//int fithSide = int.Parse(Console.ReadLine());
-
-//int Triangleperimeter = firstSide + secondSide + thirdSide;
-//int Quadrangleperimeter = firstSide + secondSide + thirdSide + forthSide;
-//int Pentagonperimeter = firstSide + secondSide + thirdSide + forthSide + fithSide;
-
-//Console.WriteLine($"Trianle perimeter: {Triangleperimeter}");
-//Console.WriteLine($"Quadrangle perimeter: {Quadrangleperimeter}");
-//Console.WriteLine($"Pentagon perimeter: {Pentagonperimeter}");
-//Console.ReadLine();
-//#endregion
-
-//#region Task_5
-//Console.WriteLine("Enter side, height, radius");
-//int side = int.Parse(Console.ReadLine());
-//int height = int.Parse(Console.ReadLine());
-//int radius = int.Parse(Console.ReadLine());
-
-
-//int TriangleSquare = side * height / 2;
-//double CircleSquare = Math.PI * radius * radius;
-
-//Console.WriteLine($"Trianle Square: {TriangleSquare}");
-//Console.WriteLine($"Circle Square: {CircleSquare}");
-//#endregion
+Console.WriteLine("Enter side, height, radius");
+int side = int.Parse(Console.ReadLine());
+int height = int.Parse(Console.ReadLine());
+int radius = int.Parse(Console.ReadLine());
+int TriangleSquare = side * height / 2;
+double CircleSquare = Math.PI * radius * radius;
+Console.WriteLine($"Trianle Square: {TriangleSquare}");
+Console.WriteLine($"Circle Square: {CircleSquare}");
+#endregion
 
 public class Homework
 
 {
     //TASK_1
-    //public double CountDiscountReturnValue(int count, double unitPrice, double discount)
-    //{
-    //    var totalPrice = count * (unitPrice - (unitPrice * discount / 100));
+    public double CountDiscountReturnValue(int count, double unitPrice, double discount)
+    {
+        var totalPrice = count * (unitPrice - (unitPrice * discount / 100));
+        return totalPrice;
+    }
 
-    //    return totalPrice;
-
-    //}
-
-
-
-
-
-    //TASK_2
-    //public double CountDiscountReturnValue(int COUNT, double UNITPRICE, double discount)
-    //{
-    //    var totalPrice = COUNT * (UNITPRICE - (UNITPRICE * discount / 100));
-
-    //    return totalPrice;
-
-    //}
-
-
-    //TASK_3
-    //public double CountDiscountReturnValue(int COUNT1, double UNITPRICE, double discount)
-    //{
-    //    var totalPrice1 = COUNT1 * (UNITPRICE - (UNITPRICE * discount / 100));
-
-    //    return totalPrice1;
-
-    //}
-
-    //TASK_3
-    //public double CountDiscountReturnValue(int COUNT2, double UNITPRICE, double discount)
-    //{
-    //    var totalPrice2 = COUNT2 * (UNITPRICE - (UNITPRICE * discount / 100));
-
-    //    return totalPrice2;
-    //}
+    //TASK_2-3
+    public String GetItemPrice(String name, double unitprice, double discount, int count=1)
+    {
+        var totalPrice = CountDiscountReturnValue(count, unitprice, discount);
+        return $"Total price of {name} is {totalPrice}";
+    }
 
     //TASK_4
-    //public static int CalculatePerimeter(params int[] sides)
-    //{
-
-    //    var perimeter = 0;
-    //    foreach (var side in sides)
-    //    {
-    //        perimeter += side;
-    //    }
-    //    return perimeter;
-    //}
+    public static int CalculatePerimeter(params int[] sides)
+    {
+        var perimeter = 0;
+        foreach (var side in sides)
+        {
+            perimeter += side;
+        }
+        return perimeter;
+    }
 
     //TASK_5
-
-    //public double CalculateTriangleSquare(int side, int height)
-    //    {
-    //        var TriangleSquare = side * height / 2;
-    //        return TriangleSquare;
-    //    }
-
-    //    public double CalculateCircleSquare(int radius)
-    //    {
-    //        var CircleSquare = Math.PI * radius * radius;
-
-    //        return CircleSquare;
-    //    }
+    public double CalculateSquare(int side, int height)
+    {
+        var TriangleSquare = side * height / 2;
+        return TriangleSquare;
+    }
+    public double CalculateSquare(int radius)
+    {
+        var CircleSquare = Math.PI * radius * radius;
+        return CircleSquare;
+    }
 
 
 
